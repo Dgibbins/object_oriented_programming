@@ -13,7 +13,12 @@ class Cat
        puts "Eats at #{@meal_time-12} PM."
     end
   end
-  
+
+  def meow
+    puts "<meow>I'm going to pee all over your pillow while you sleep<meow>"
+  end
+
+
 end
 
 foo=Cat.new('Bar', 'Iams', 12)
