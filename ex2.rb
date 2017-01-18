@@ -7,14 +7,15 @@ class Cat
   end
 
   def eats_at
-    if @meal_time<12
-       puts "Eats at {@meal_time}AM."
+    if @meal_time<=12
+       "Eats at {@meal_time}AM."
      else
-       puts "Eats at #{@meal_time-12} PM."
+       "Eats at #{@meal_time-12} PM."
     end
   end
 
   def meow
+    puts "My name is #{@name} and I eat #{@preffered_food}. I like to #{eats_at}"
     puts "<meow>I'm going to pee all over your pillow while you sleep<meow>"
   end
 
