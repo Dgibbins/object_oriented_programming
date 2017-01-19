@@ -2,10 +2,10 @@ require './Body'
 
 class Moon < Body
 
-  def month
+  def initialize(name, mass, month, planet)
+    super(name, mass)
+    @month = month
+    @planet= planet
   end
-
-  def planet
-  end
-
+  
 end

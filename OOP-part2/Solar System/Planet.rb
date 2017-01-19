@@ -2,10 +2,10 @@ require './Body'
 
 class Planet < Body
 
-  def day
+  def initialize(name, mass, day, year)
+    super(name, mass)
+    @day = day
+    @year = year
   end
-
-  def year
-  end
-
+  
 end
